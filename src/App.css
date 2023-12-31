@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  font-family: Space Grotesk,sans-serif;
+}
+
+.hero {
+  background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%)
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.hero button {
+  background: linear-gradient(25deg, #2600fc, #ff00ea)
+}
+.drop{
+  background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%)
+
+}
+.market {
+  background-color: #0f051d;
+}
+
+.market .inner {
+  background: linear-gradient(25deg, #2600fc, #ff00ea)
+}
+
+.smbox {
+  background: linear-gradient(25deg, #2600fc, #ff00ea)
+}
+.closebtn{
+  background: linear-gradient(25deg, #2600fc, #ff00ea)
+}
+.footer {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box {
+  animation-name: big;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  position: relative;
+  background-image:
+    linear-gradient(#FFF 16px, transparent 0),
+    linear-gradient(#ff00ea 16px, transparent 0),
+    linear-gradient(#ff00ea 16px, transparent 0),
+    linear-gradient(#FFF 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top, left bottom, right top, right bottom;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(0deg)
+  }
+
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg)
+  }
+
+  100% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(360deg)
+  }
+}
+.imgcon{
+  animation-name: updown;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes updown {
+    from{
+      transform: translateY(0px);
+    }
+    to{
+      transform: translateY(10px);
+    }
+}
